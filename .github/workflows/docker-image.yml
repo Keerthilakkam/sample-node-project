@@ -17,8 +17,8 @@ jobs:
     - name: Build the Docker image
       run: docker build -t tes .
     - name: Tag the docker image
-      run: docker tag tes keerthi/test1
+      run: docker tag tes dockerl123456789/test1
     - name: Docker login
       run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
     - name: docker push
-      run: docker push keerthi/test1
+      run: docker push dockerl123456789/test1
